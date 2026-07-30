@@ -1,6 +1,4 @@
-
-
-  ----------------------------------------------------------------------
+----------------------------------------------------------------------
 ----																					----
 ---- Basic RSA Public Key Cryptography IP Core 							----
 ---- 																					----
@@ -214,7 +212,7 @@ begin
 		if reset = '1' then
 			tempin <= (others => '0');
 			sqrin <= (others => '0');
-			--modreg <= (others => '0');
+			modreg <= (others => '0');
 		elsif rising_edge(clk) then
 			if done = '1' then
 				if ds = '1' then
@@ -229,7 +227,7 @@ begin
 						tempin(KEYSIZE-1 downto 1) <= (others => '0');
 						tempin(0) <= '1';
 					end if;
-					--modreg <= inMod;
+					modreg <= inMod;
 					sqrin(KEYSIZE-1 downto 1) <= (others => '0');
 					sqrin(0) <= '1';
 				end if;

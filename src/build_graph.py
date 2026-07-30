@@ -1,7 +1,9 @@
 import os
 import re
+import sys
 import networkx as nx
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
@@ -20,14 +22,15 @@ def parse_netlist_to_graph(netlist_path):
     # Remove single-line comments
     content = re.sub(r"//.*", "", content)
 
-    # Matches:
-    # AND2 U1 (.A(a), .B(b), .Y(n1));
+    # Match gate instantiations
+    # Example:
+    # AND2 U1 (.A(a), .B(b), .Y(out));
     gate_pattern = re.compile(
         r'(\w+)\s+(\w+)\s*\((.*?)\)\s*;',
         re.DOTALL
     )
 
-    # Output port names used by different libraries
+    # Output ports used by different synthesis libraries
     output_ports = {
         "Y", "Q", "Z", "ZN", "O", "OUT", "QB"
     }
@@ -55,10 +58,6 @@ def parse_netlist_to_graph(netlist_path):
         G.add_node(gate_name, gate_type=gate_type)
 
         # Match ports
-        # Handles:
-        # .A(a)
-        # .B(data[3])
-        # .Y(n1)
         port_pattern = re.compile(r'\.(\w+)\(([^)]+)\)')
 
         for port in port_pattern.finditer(port_str):
@@ -66,8 +65,10 @@ def parse_netlist_to_graph(netlist_path):
             port_name = port.group(1)
             signal_name = port.group(2).strip()
 
+            # Add wire node
             G.add_node(signal_name, gate_type="WIRE")
 
+            # Direction of edge
             if port_name in output_ports:
                 G.add_edge(gate_name, signal_name)
             else:
@@ -107,8 +108,8 @@ def print_graph_stats(G, name):
 
     print("\nGraph Metrics")
 
-    print(f"Average Fan-in  : {sum(indegrees.values())/len(indegrees):.2f}")
-    print(f"Average Fan-out : {sum(outdegrees.values())/len(outdegrees):.2f}")
+    print(f"Average Fan-in  : {sum(indegrees.values()) / len(indegrees):.2f}")
+    print(f"Average Fan-out : {sum(outdegrees.values()) / len(outdegrees):.2f}")
 
     print(f"Maximum Fan-in  : {max(indegrees.values())}")
     print(f"Maximum Fan-out : {max(outdegrees.values())}")
@@ -164,7 +165,7 @@ def visualize_subgraph(G, name, n_nodes=60):
     plt.savefig(output_file, dpi=200, bbox_inches="tight")
     plt.close()
 
-    print(f"\nGraph image saved to:")
+    print("\nGraph image saved to:")
     print(output_file)
 
 
@@ -174,10 +175,30 @@ def visualize_subgraph(G, name, n_nodes=60):
 
 if __name__ == "__main__":
 
-    netlist_path = "../Dataset/trojan/AES-T100/src/TjFree/aes_clean_netlist.v"
+    # Check command-line arguments
+    if len(sys.argv) != 2:
+        print("Usage: python3 build_graph.py <netlist_file>")
+        sys.exit(1)
 
+    netlist_path = sys.argv[1]
+
+    # Verify file exists
+    if not os.path.isfile(netlist_path):
+        print(f"Error: '{netlist_path}' does not exist.")
+        sys.exit(1)
+
+    # Extract filename (without extension)
+    # Example:
+    # rsacypher_netlist.v -> rsacypher_netlist
+    benchmark_name = os.path.splitext(
+        os.path.basename(netlist_path)
+    )[0]
+
+    # Build graph
     G = parse_netlist_to_graph(netlist_path)
 
-    print_graph_stats(G, "AES-T100-Clean")
+    # Print statistics
+    print_graph_stats(G, benchmark_name)
 
-    visualize_subgraph(G, "AES-T100-Clean")
+    # Save graph image
+    visualize_subgraph(G, benchmark_name)
