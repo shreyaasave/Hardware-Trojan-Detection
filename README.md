@@ -96,9 +96,8 @@ Localization & Explanation
 
 ## Current Status
 
-- [x] Repository Created
-- [x] GitHub Setup
-- [ ] Dataset Preparation
+- [x] Setup/ Installations
+- [x] Dataset Preparation
 - [ ] Parser Implementation
 - [ ] Graph Generation
 - [ ] GNN Development
@@ -116,7 +115,7 @@ Localization & Explanation
 - PyTorch Geometric
 - NetworkX
 - PyVerilog
-- Yosys
+- Cadence Genus
 - Flask / FastAPI
 - HTML
 - CSS
