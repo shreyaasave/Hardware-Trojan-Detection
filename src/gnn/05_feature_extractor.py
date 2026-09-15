@@ -8,9 +8,9 @@ from feature_extractor import FeatureExtractor
 # CONFIG
 # ==========================================================
 
-PARSED_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/parsed")
-GRAPH_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/graphs")
-FEATURES_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/features")
+PARSED_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/parsed")
+GRAPH_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/graphs")
+FEATURES_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/features")
 
 FEATURES_ROOT.mkdir(parents=True, exist_ok=True)
 (FEATURES_ROOT / "data").mkdir(exist_ok=True)

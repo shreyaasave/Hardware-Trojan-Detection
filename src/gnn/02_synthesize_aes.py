@@ -7,7 +7,7 @@ import re
 # ==========================================================
 
 ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/AES_unzipped")
-OUTROOT = Path("/home/shreya/HT_detection_GNN/trusthub/netlists/AES")
+OUTROOT = Path("/home/shreya/CAPSTONE/results/gnn/netlists/AES")
 
 YOSYS = shutil.which("yosys") or "yosys"
 

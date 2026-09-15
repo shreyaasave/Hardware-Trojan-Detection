@@ -6,8 +6,8 @@ from collections import defaultdict
 # CONFIG
 # ==========================================================
 
-METADATA_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/features/metadata")
-MANIFEST_PATH = Path("/home/shreya/HT_detection_GNN/trusthub/features/manifest.json")
+METADATA_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/features/metadata")
+MANIFEST_PATH = Path("/home/shreya/CAPSTONE/results/gnn/features/manifest.json")
 
 SUSPICIOUS_NAME_SUBSTRINGS = ["trojan", "tsc", "trigger", "malicious", "backdoor"]
 

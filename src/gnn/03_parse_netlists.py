@@ -7,8 +7,8 @@ import json
 # CONFIG
 # ============================================================
 
-NETLIST_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/netlists")
-OUTPUT_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/parsed")
+NETLIST_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/netlists")
+OUTPUT_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/parsed")
 
 OUTPUT_ROOT.mkdir(
     parents=True,

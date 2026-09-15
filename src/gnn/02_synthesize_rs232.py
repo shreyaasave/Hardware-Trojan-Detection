@@ -9,7 +9,7 @@ import re
 # =====================================================
 
 ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/AES_unzipped")
-OUTROOT = Path("home/shreya/HT_detection_GNN/trusthub/netlists/RS232")
+OUTROOT = Path("/home/shreya/CAPSTONE/results/gnn/netlists/RS232")
 REQUEST_DELAY_SECONDS = 4   # spacing between actual (non-cached) API calls
 RETRY_DELAY_SECONDS = 10  # base wait time before retrying a failed API call
 YOSYS = shutil.which("yosys") or "yosys"

@@ -5,8 +5,8 @@ from graph_builder import GraphBuilder
 # CONFIG
 # ============================================================
 
-PARSED_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/parsed")
-GRAPH_ROOT = Path("/home/shreya/HT_detection_GNN/trusthub/graphs")
+PARSED_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/parsed")
+GRAPH_ROOT = Path("/home/shreya/CAPSTONE/results/gnn/graphs")
 
 GRAPH_ROOT.mkdir(parents=True, exist_ok=True)
 
