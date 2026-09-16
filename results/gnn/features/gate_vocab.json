@@ -1,0 +1,19 @@
+{
+  "gate_classes": [
+    "AND",
+    "ANDNOT",
+    "AOI",
+    "BUF",
+    "DFF",
+    "ISOLATION",
+    "MUX",
+    "NAND",
+    "NOR",
+    "NOT",
+    "OAI",
+    "OR",
+    "ORNOT",
+    "XNOR",
+    "XOR"
+  ]
+}

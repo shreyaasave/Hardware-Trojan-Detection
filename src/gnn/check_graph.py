@@ -1,6 +1,6 @@
 import pickle
 
-with open("/home/shreya/HT_detection_GNN/trusthub/graphs/AES/AES-T100/clean_netlist.gpickle", "rb") as f:
+with open("/home/shreya/CAPSTONE/results/gnn/graphs/AES/AES-T100/clean_netlist.gpickle", "rb") as f:
     G = pickle.load(f)
 
 isolated = [n for n in G.nodes if G.in_degree(n) == 0 and G.out_degree(n) == 0]
