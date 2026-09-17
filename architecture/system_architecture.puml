@@ -1,0 +1,104 @@
+@startuml system_architecture
+title Hardware Trojan Detection via Attention-Based Fusion of GNN and LLM
+
+skinparam backgroundColor #FFFFFF
+skinparam roundcorner 10
+skinparam rectangle {
+    BorderColor #444444
+    FontSize 12
+}
+
+rectangle "Raw Design Sources" as RAW {
+    rectangle "RTL (Verilog)\nTjFree / TjIn" as RTL
+}
+
+package "GNN / Structural Pipeline" as GNN_PIPE #E6F1FB {
+    rectangle "02_synthesize_*.py\n(Yosys)" as SYNTH
+    rectangle "Gate-level Netlist (.v)" as NETLIST
+    rectangle "03_parse_netlists.py\nregex parser" as PARSE
+    rectangle "Parsed JSON\n(gates, ports, label)" as JSON
+    rectangle "04_build_graph.py\ngraph_builder.py" as BUILD
+    rectangle "NetworkX Graph\n(.gpickle / .graphml)" as GRAPH
+    rectangle "05_feature_extractor.py\nfeature_extractor.py" as FEAT
+    rectangle "Node Features\n[num_gates, 20]\ngate-class + degree + ctrl/obs" as NODEFEAT
+    rectangle "QA Layer\ncheck_graph / check_leakage\ncheck_dataset_consistency.pl" as QA_GNN
+
+    SYNTH --> NETLIST
+    NETLIST --> PARSE
+    PARSE --> JSON
+    JSON --> BUILD
+    BUILD --> GRAPH
+    GRAPH --> FEAT
+    FEAT --> NODEFEAT
+    NODEFEAT --> QA_GNN
+}
+
+package "LLM / Semantic Pipeline" as LLM_PIPE #EAF3DE {
+    rectangle "preprocess.py\nRTL consolidation" as CONSOL
+    rectangle "Consolidated RTL text\n(clean_rtl.v / trojan_rtl.v)" as RTLTEXT
+    rectangle "check_model.py\nCodeBERT verification\nhidden=768, max_len=512" as CHECKMODEL
+    rectangle "generate_chunk_embeddings.py\nsliding window, stride=50" as CHUNK
+    rectangle "RTL Chunk Embeddings\n[num_chunks, 768]" as EMB
+    rectangle "verify_semantic_coverage.py\nQA: 80/80 present" as QA_LLM
+
+    CONSOL --> RTLTEXT
+    RTLTEXT --> CHECKMODEL
+    CHECKMODEL --> CHUNK
+    CHUNK --> EMB
+    EMB --> QA_LLM
+}
+
+package "Fusion + Classification" as FUSION_PIPE #EEEDFE {
+    rectangle "GNNEncoder\n2-layer GCN\n20-dim -> 128-dim" as GNNENC
+    rectangle "GNNCodeCrossAttention\nGNN nodes = query\nRTL chunks = key/value" as CROSSATTN
+    rectangle "masked_mean_pool" as POOL
+    rectangle "Classifier\n(nn.Linear)\nclean / trojan" as CLASSIFIER
+    rectangle "Attention Weights\n(localization signal)" as ATTNW
+
+    GNNENC --> CROSSATTN
+    CROSSATTN --> POOL
+    POOL --> CLASSIFIER
+    CROSSATTN --> ATTNW
+}
+
+package "Explainability (planned)" as EXPLAIN #FAECE7 {
+    rectangle "Node-level\nlocalization scores" as NODESCORE
+    rectangle "LLM-generated\nnatural-language explanation" as NLEXPLAIN
+
+    ATTNW --> NODESCORE
+    NODESCORE --> NLEXPLAIN
+}
+
+package "Robustness Evaluation (planned)" as ROBUST #FCEBEB {
+    rectangle "Held-out obfuscated test set\n(renaming, dummy gates,\nnode/edge reordering)" as OBFUS
+    rectangle "Weighted BCE / Focal Loss\nBalanced Accuracy, F1, AUROC" as METRICS
+}
+
+RAW --> RTL
+RTL --> SYNTH
+RTL --> CONSOL
+
+NODEFEAT --> GNNENC
+EMB --> CROSSATTN
+
+CLASSIFIER ..> OBFUS : post-hoc evaluation
+CLASSIFIER --> METRICS
+
+note bottom of FUSION_PIPE
+  Status: architecture implemented,
+  validated on real AES-T100 samples,
+  not yet trained end-to-end
+end note
+
+note bottom of GNN_PIPE
+  Status: fully run and verified
+  53 AES + 40 RS232 synthesized,
+  93 graphs, 93 feature sets
+end note
+
+note bottom of LLM_PIPE
+  Status: fully run and verified
+  80/80 chunked embeddings present
+end note
+
+@enduml
