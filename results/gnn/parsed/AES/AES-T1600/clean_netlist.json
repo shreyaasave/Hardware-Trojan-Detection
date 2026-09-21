@@ -1,6 +1,6 @@
 {
     "module": "aes_128",
-    "source": "/home/shreya/HT_detection_GNN/trusthub/netlists/AES/AES-T1600/clean_netlist.v",
+    "source": "/home/shreya/CAPSTONE/results/gnn/netlists/AES/AES-T1600/clean_netlist.v",
     "label": 0,
     "num_gates": 7903,
     "gates": [

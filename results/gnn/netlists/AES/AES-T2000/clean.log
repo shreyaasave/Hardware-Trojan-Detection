@@ -6,7 +6,7 @@
  \----------------------------------------------------------------------------/
  Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
 
--- Executing script file `/home/shreya/HT_detection_GNN/trusthub/netlists/AES/AES-T2000/clean.ys' --
+-- Executing script file `/home/shreya/CAPSTONE/results/gnn/netlists/AES/AES-T2000/clean.ys' --
 
 1. Executing Verilog-2005 frontend: /home/shreya/HT_detection_GNN/trusthub/AES_unzipped/AES-T2000/AES-T2000/src/TjFree/aes_128.v
 Parsing Verilog input from `/home/shreya/HT_detection_GNN/trusthub/AES_unzipped/AES-T2000/AES-T2000/src/TjFree/aes_128.v' to AST representation.
@@ -676,7 +676,7 @@ Optimizing module aes_128.
 13. Executing Verilog backend.
 Dumping module `\aes_128'.
 
-End of script. Logfile hash: e4f6f79391, time: 2.86s, user: 1.66s, system: 0.07s, MEM: 62.82 MB peak
+End of script. Logfile hash: 06f831d7b1, time: 3.10s, user: 1.84s, system: 0.07s, MEM: 62.93 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 49% 1x abc (1 sec), 18% 7x opt_clean (0 sec), ...
+Time spent: 46% 1x abc (1 sec), 20% 7x opt_clean (0 sec), ...
 

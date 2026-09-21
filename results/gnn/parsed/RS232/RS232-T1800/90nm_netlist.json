@@ -1,6 +1,6 @@
 {
     "module": "uart",
-    "source": "/home/shreya/HT_detection_GNN/trusthub/netlists/RS232/RS232-T1800/90nm_netlist.v",
+    "source": "/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T1800/90nm_netlist.v",
     "label": 1,
     "num_gates": 256,
     "gates": [

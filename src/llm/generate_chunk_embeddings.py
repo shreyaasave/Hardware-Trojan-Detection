@@ -8,9 +8,11 @@ now deprecated), which silently truncated RTL at 512 tokens.
 Core method: split each RTL file into overlapping 512-token windows
 (stride=50), masked-mean-pool each window separately, and stack the
 results into a single (num_chunks, 768) tensor per file.
+
+Processes every *_rtl.v file produced by preprocess_all.py, not just a
+single hardcoded design.
 """
 
-import os
 from pathlib import Path
 
 import torch
@@ -23,11 +25,11 @@ from transformers import AutoModel, AutoTokenizer
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-# Where the consolidated RTL text files live (from preprocess.py)
-INPUT_DIR = PROJECT_ROOT / "results" / "llm"
+# Where preprocess_all.py wrote the consolidated RTL text files
+INPUT_DIR = PROJECT_ROOT / "results" / "llm" / "rtl"
 
 # Where chunked embeddings will be saved
-OUTPUT_DIR = INPUT_DIR / "embeddings"
+OUTPUT_DIR = PROJECT_ROOT / "results" / "llm" / "embeddings"
 
 CHECKPOINT = "microsoft/codebert-base"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -90,7 +92,6 @@ def get_chunk_embeddings(code_text, max_length=512, stride=50):
 # --------------------------------------------------
 
 def read_rtl(path):
-    print(f"Reading: {path}")
     return path.read_text(errors="ignore")
 
 
@@ -101,28 +102,47 @@ def read_rtl(path):
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    designs = {
-        "AES_T100_clean": INPUT_DIR / "AES_T100_clean_rtl.v",
-        "AES_T100_trojan": INPUT_DIR / "AES_T100_trojan_rtl.v",
-    }
+    rtl_files = sorted(INPUT_DIR.glob("*_rtl.v"))
+    print(f"Found {len(rtl_files)} RTL files in {INPUT_DIR}\n")
 
-    for name, rtl_path in designs.items():
-        if not rtl_path.exists():
-            print(f"ERROR: {rtl_path} not found")
+    success = 0
+    skipped = 0
+    failed = 0
+
+    for i, rtl_path in enumerate(rtl_files, 1):
+        # e.g. "AES-T100_clean_rtl.v" -> "AES-T100_clean"
+        name = rtl_path.stem.removesuffix("_rtl")
+        output_path = OUTPUT_DIR / f"{name}_chunk.pt"
+
+        print(f"[{i}/{len(rtl_files)}] {name}")
+
+        if output_path.exists():
+            print("    SKIP (already exists)")
+            skipped += 1
             continue
 
-        rtl = read_rtl(rtl_path)
+        try:
+            rtl = read_rtl(rtl_path)
+            if not rtl.strip():
+                print("    SKIP (empty file)")
+                skipped += 1
+                continue
 
-        print(f"Generating chunked embeddings for {name}...")
-        embedding = get_chunk_embeddings(rtl)
+            embedding = get_chunk_embeddings(rtl)
+            torch.save(embedding, output_path)
+            print(f"    Saved: {output_path.name}  shape={tuple(embedding.shape)}")
+            success += 1
 
-        output_path = OUTPUT_DIR / f"{name}_chunk.pt"
-        torch.save(embedding, output_path)
+        except Exception as e:
+            print(f"    FAILED: {e}")
+            failed += 1
 
-        print(f"Saved: {output_path}")
-        print(f"Shape: {tuple(embedding.shape)}")
-
-    print("\nDone.")
+    print("\n" + "=" * 60)
+    print("Chunked embedding generation complete")
+    print(f"Successful : {success}")
+    print(f"Skipped    : {skipped}")
+    print(f"Failed     : {failed}")
+    print("=" * 60)
 
 
 if __name__ == "__main__":

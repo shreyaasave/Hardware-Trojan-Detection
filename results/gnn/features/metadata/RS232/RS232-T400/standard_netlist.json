@@ -2,7 +2,7 @@
   "graph_id": "RS232/RS232-T400/standard_netlist",
   "label": 1,
   "num_nodes": 67,
-  "num_edges": 85,
+  "num_edges": 84,
   "node_names": [
     "_057_",
     "_058_",
@@ -75,33 +75,33 @@
   "node_types": [
     "\\$_ANDNOT_",
     "\\$_ANDNOT_",
-    "\\$_ANDNOT_",
-    "\\$_ANDNOT_",
     "\\$_NOR_",
-    "\\$_OR_",
     "\\$_ANDNOT_",
+    "\\$_ANDNOT_",
+    "\\$_AND_",
+    "\\$_NAND_",
+    "\\$_NAND_",
     "\\$_AND_",
     "\\$_AND_",
     "\\$_AND_",
     "\\$_ORNOT_",
-    "\\$_NOR_",
-    "\\$_ANDNOT_",
-    "\\$_NAND_",
-    "\\$_NAND_",
     "\\$_ANDNOT_",
     "\\$_ANDNOT_",
     "\\$_ANDNOT_",
+    "\\$_ANDNOT_",
+    "\\$_ANDNOT_",
+    "\\$_ORNOT_",
     "\\$_AND_",
     "\\$_NAND_",
-    "\\$_ANDNOT_",
-    "\\$_NOR_",
-    "\\$_NOR_",
-    "\\$_ANDNOT_",
     "\\$_AND_",
-    "\\$_NAND_",
+    "\\$_NOR_",
     "\\$_OR_",
     "\\$_AND_",
     "\\$_ANDNOT_",
+    "\\$_ANDNOT_",
+    "\\$_NOR_",
+    "\\$_AND_",
+    "\\$_NAND_",
     "\\$_AND_",
     "\\$_NAND_",
     "\\$_ORNOT_",
@@ -128,49 +128,49 @@
     "\\$_AND_",
     "\\$_NOR_",
     "\\$_AND_",
-    "\\$_XNOR_",
-    "\\$_AND_",
     "\\$_ANDNOT_",
     "\\$_XNOR_",
     "\\$_AND_",
-    "\\$_ANDNOT_",
-    "\\$_ANDNOT_",
-    "\\$_OR_",
+    "\\$_XNOR_",
     "\\$_AND_",
     "\\$_ANDNOT_",
+    "\\$_ANDNOT_",
+    "\\$_AND_",
     "\\$_OR_",
-    "\\$_ANDNOT_"
+    "\\$_ANDNOT_",
+    "\\$_ANDNOT_",
+    "\\$_OR_"
   ],
   "node_gate_classes": [
     "ANDNOT",
     "ANDNOT",
-    "ANDNOT",
-    "ANDNOT",
     "NOR",
-    "OR",
     "ANDNOT",
+    "ANDNOT",
+    "AND",
+    "NAND",
+    "NAND",
     "AND",
     "AND",
     "AND",
     "ORNOT",
-    "NOR",
-    "ANDNOT",
-    "NAND",
-    "NAND",
     "ANDNOT",
     "ANDNOT",
     "ANDNOT",
+    "ANDNOT",
+    "ANDNOT",
+    "ORNOT",
     "AND",
     "NAND",
-    "ANDNOT",
-    "NOR",
-    "NOR",
-    "ANDNOT",
     "AND",
-    "NAND",
+    "NOR",
     "OR",
     "AND",
     "ANDNOT",
+    "ANDNOT",
+    "NOR",
+    "AND",
+    "NAND",
     "AND",
     "NAND",
     "ORNOT",
@@ -197,18 +197,18 @@
     "AND",
     "NOR",
     "AND",
-    "XNOR",
-    "AND",
     "ANDNOT",
     "XNOR",
     "AND",
-    "ANDNOT",
-    "ANDNOT",
-    "OR",
+    "XNOR",
     "AND",
     "ANDNOT",
+    "ANDNOT",
+    "AND",
     "OR",
-    "ANDNOT"
+    "ANDNOT",
+    "ANDNOT",
+    "OR"
   ],
   "node_ports": [
     {
@@ -222,98 +222,98 @@
       "Y": "_011_"
     },
     {
-      "A": "\\iRECEIVER.state [0]",
-      "B": "\\iRECEIVER.state [1]",
+      "A": "\\iRECEIVER.bitCell_cntrH [0]",
+      "B": "\\iRECEIVER.bitCell_cntrH [1]",
       "Y": "_012_"
     },
     {
-      "A": "_012_",
-      "B": "\\iRECEIVER.state [2]",
+      "A": "\\iRECEIVER.bitCell_cntrH [2]",
+      "B": "\\iRECEIVER.bitCell_cntrH [3]",
       "Y": "_013_"
-    },
-    {
-      "A": "_011_",
-      "B": "_013_",
-      "Y": "_014_"
-    },
-    {
-      "A": "\\iRECEIVER.rec_datH",
-      "B": "_014_",
-      "Y": "_015_"
     },
     {
       "A": "\\iRECEIVER.bitCell_cntrH [2]",
       "B": "\\iRECEIVER.bitCell_cntrH [0]",
+      "Y": "_014_"
+    },
+    {
+      "A": "_012_",
+      "B": "_013_",
+      "Y": "_015_"
+    },
+    {
+      "A": "\\iRECEIVER.rec_datH",
+      "B": "_015_",
       "Y": "_016_"
+    },
+    {
+      "A": "_011_",
+      "B": "_016_",
+      "Y": "_017_"
     },
     {
       "A": "\\iRECEIVER.bitCell_cntrH [1]",
       "B": "\\iRECEIVER.bitCell_cntrH [3]",
-      "Y": "_017_"
+      "Y": "_018_"
     },
     {
-      "A": "_016_",
-      "B": "_017_",
-      "Y": "_018_"
+      "A": "_014_",
+      "B": "_018_",
+      "Y": "_019_"
     },
     {
       "A": "\\iRECEIVER.state [0]",
       "B": "_010_",
-      "Y": "_019_"
-    },
-    {
-      "A": "_018_",
-      "B": "_019_",
       "Y": "_020_"
     },
     {
-      "A": "\\iRECEIVER.bitCell_cntrH [0]",
-      "B": "\\iRECEIVER.bitCell_cntrH [1]",
+      "A": "_019_",
+      "B": "_020_",
       "Y": "_021_"
-    },
-    {
-      "A": "\\iRECEIVER.bitCell_cntrH [2]",
-      "B": "\\iRECEIVER.bitCell_cntrH [3]",
-      "Y": "_022_"
-    },
-    {
-      "A": "_021_",
-      "B": "_022_",
-      "Y": "_023_"
-    },
-    {
-      "A": "_011_",
-      "B": "_023_",
-      "Y": "_024_"
     },
     {
       "A": "\\iRECEIVER.state [2]",
       "B": "\\iRECEIVER.state [1]",
-      "Y": "_025_"
+      "Y": "_022_"
     },
     {
-      "A": "_025_",
+      "A": "_022_",
       "B": "\\iRECEIVER.state [0]",
       "Y": "\\iRECEIVER.countH"
     },
     {
-      "A": "_024_",
+      "A": "_021_",
       "B": "\\iRECEIVER.countH",
+      "Y": "_023_"
+    },
+    {
+      "A": "\\iRECEIVER.state [0]",
+      "B": "\\iRECEIVER.state [1]",
+      "Y": "_024_"
+    },
+    {
+      "A": "_024_",
+      "B": "\\iRECEIVER.state [2]",
+      "Y": "_025_"
+    },
+    {
+      "A": "\\iRECEIVER.rec_datH",
+      "B": "_025_",
       "Y": "_026_"
     },
     {
-      "A": "_015_",
+      "A": "_023_",
       "B": "_026_",
       "Y": "_027_"
     },
     {
-      "A": "_020_",
+      "A": "_017_",
       "B": "_027_",
       "Y": "\\iRECEIVER.next_state [1]"
     },
     {
       "A": "_011_",
-      "B": "_023_",
+      "B": "_015_",
       "Y": "_028_"
     },
     {
@@ -322,42 +322,42 @@
       "Y": "_029_"
     },
     {
-      "A": "\\iRECEIVER.recd_bitCntrH [0]",
-      "B": "\\iRECEIVER.recd_bitCntrH [1]",
+      "A": "\\iRECEIVER.state [2]",
+      "B": "\\iRECEIVER.rec_datH",
       "Y": "_030_"
+    },
+    {
+      "A": "_024_",
+      "B": "_030_",
+      "Y": "\\iRECEIVER.rec_readyInH"
+    },
+    {
+      "A": "_021_",
+      "B": "\\iRECEIVER.rec_readyInH",
+      "Y": "_031_"
     },
     {
       "A": "\\iRECEIVER.recd_bitCntrH [3]",
       "B": "\\iRECEIVER.recd_bitCntrH [2]",
-      "Y": "_031_"
-    },
-    {
-      "A": "_030_",
-      "B": "_031_",
       "Y": "_032_"
     },
     {
-      "A": "_019_",
-      "B": "_032_",
+      "A": "\\iRECEIVER.recd_bitCntrH [0]",
+      "B": "\\iRECEIVER.recd_bitCntrH [1]",
       "Y": "_033_"
     },
     {
-      "A": "\\iRECEIVER.state [2]",
-      "B": "\\iRECEIVER.rec_datH",
+      "A": "_032_",
+      "B": "_033_",
       "Y": "_034_"
     },
     {
-      "A": "_012_",
-      "B": "_034_",
-      "Y": "\\iRECEIVER.rec_readyInH"
-    },
-    {
       "A": "_020_",
-      "B": "\\iRECEIVER.rec_readyInH",
+      "B": "_034_",
       "Y": "_035_"
     },
     {
-      "A": "_033_",
+      "A": "_031_",
       "B": "_035_",
       "Y": "_036_"
     },
@@ -372,8 +372,8 @@
       "Y": "_037_"
     },
     {
-      "A": "\\iXMIT.state [0]",
-      "B": "\\iXMIT.state [1]",
+      "A": "\\iXMIT.state [1]",
+      "B": "\\iXMIT.state [0]",
       "Y": "_038_"
     },
     {
@@ -417,7 +417,7 @@
       "Y": "_006_"
     },
     {
-      "A": "_030_",
+      "A": "_033_",
       "B": "_041_",
       "Y": "_045_"
     },
@@ -432,13 +432,13 @@
       "Y": "_004_"
     },
     {
-      "A": "_018_",
-      "B": "_019_",
+      "A": "_019_",
+      "B": "_020_",
       "Y": "\\iRECEIVER.next_state [2]"
     },
     {
       "A": "\\iRECEIVER.rec_datH",
-      "B": "_013_",
+      "B": "_025_",
       "Y": "_046_"
     },
     {
@@ -447,7 +447,7 @@
       "Y": "_008_"
     },
     {
-      "A": "_012_",
+      "A": "_024_",
       "B": "\\iRECEIVER.next_state [2]",
       "Y": "_047_"
     },
@@ -477,7 +477,7 @@
       "Y": "_002_"
     },
     {
-      "A": "_021_",
+      "A": "_012_",
       "B": "_049_",
       "Y": "_052_"
     },
@@ -485,6 +485,11 @@
       "A": "_048_",
       "B": "_052_",
       "Y": "_001_"
+    },
+    {
+      "A": "_048_",
+      "B": "\\iRECEIVER.bitCell_cntrH [0]",
+      "Y": "_000_"
     },
     {
       "A": "\\iRECEIVER.recd_bitCntrH [3]",
@@ -497,11 +502,6 @@
       "Y": "_007_"
     },
     {
-      "A": "_048_",
-      "B": "\\iRECEIVER.bitCell_cntrH [0]",
-      "Y": "_000_"
-    },
-    {
       "A": "\\iRECEIVER.bitCell_cntrH [3]",
       "B": "_050_",
       "Y": "_054_"
@@ -512,65 +512,54 @@
       "Y": "_003_"
     },
     {
-      "A": "\\iXMIT.state [2]",
-      "B": "\\iXMIT.state [1]",
+      "A": "_038_",
+      "B": "\\iXMIT.state [2]",
       "Y": "_055_"
     },
     {
-      "A": "\\iXMIT.state [0]",
-      "B": "_037_",
+      "A": "\\iXMIT.state [2]",
+      "B": "\\iXMIT.state [1]",
       "Y": "_056_"
     },
     {
-      "A": "_055_",
-      "B": "_056_",
-      "Y": "\\iXMIT.next_state [0]"
-    },
-    {
       "A": "\\iXMIT.state [0]",
-      "B": "_055_",
+      "B": "_056_",
       "Y": "\\iXMIT.next_state [2]"
     },
     {
-      "A": "_038_",
-      "B": "\\iXMIT.state [2]",
-      "Y": "_009_"
-    },
-    {
-      "A": "\\iXMIT.next_state [2]",
-      "B": "_009_",
+      "A": "_055_",
+      "B": "\\iXMIT.next_state [2]",
       "Y": "uart_XMIT_dataH"
     },
     {
       "A": "_038_",
       "B": "_039_",
       "Y": "\\iXMIT.xmit_doneInH"
+    },
+    {
+      "A": "\\iXMIT.state [0]",
+      "B": "_037_",
+      "Y": "_009_"
+    },
+    {
+      "A": "_056_",
+      "B": "_009_",
+      "Y": "\\iXMIT.next_state [0]"
     }
   ],
   "node_controllability": [
     0.0,
     1.0,
     0.0,
-    1.0,
-    2.0,
-    3.0,
-    0.0,
-    0.0,
-    1.0,
-    1.0,
-    2.0,
     0.0,
     0.0,
     1.0,
     2.0,
+    2.0,
     0.0,
     1.0,
+    1.0,
     2.0,
-    3.0,
-    3.0,
-    2.0,
-    2.0,
-    0.0,
     0.0,
     1.0,
     2.0,
@@ -579,6 +568,17 @@
     2.0,
     3.0,
     3.0,
+    2.0,
+    2.0,
+    0.0,
+    1.0,
+    2.0,
+    0.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    3.0,
     0.0,
     0.0,
     0.0,
@@ -602,48 +602,48 @@
     1.0,
     2.0,
     1.0,
+    2.0,
+    3.0,
     2.0,
     2.0,
     2.0,
     3.0,
-    2.0,
-    3.0,
+    1.0,
     0.0,
     1.0,
-    1.0,
-    1.0,
-    1.0,
     2.0,
+    1.0,
+    1.0,
     1.0
   ],
   "node_observability": [
     3.0,
-    3.0,
-    3.0,
     2.0,
-    3.0,
     2.0,
+    4.0,
+    5.0,
     3.0,
-    3.0,
-    2.0,
     2.0,
     1.0,
-    2.0,
+    5.0,
     4.0,
     3.0,
     3.0,
     2.0,
     1.0,
     2.0,
+    3.0,
+    2.0,
+    2.0,
     1.0,
     0.0,
     2.0,
     1.0,
-    2.0,
     4.0,
     3.0,
     2.0,
     4.0,
+    2.0,
     3.0,
     2.0,
     1.0,
@@ -672,17 +672,17 @@
     0.0,
     1.0,
     0.0,
-    1.0,
-    0.0,
     0.0,
     1.0,
     0.0,
     1.0,
-    1.0,
     0.0,
     1.0,
     1.0,
+    1.0,
     0.0,
+    0.0,
+    1.0,
     0.0
   ],
   "edge_signals": [
@@ -690,49 +690,48 @@
     "_010_",
     "_011_",
     "_011_",
-    "_011_",
     "_012_",
     "_012_",
-    "_012_",
-    "_013_",
     "_013_",
     "_014_",
+    "_015_",
     "_015_",
     "_016_",
     "_017_",
     "_018_",
-    "_018_",
     "_019_",
     "_019_",
-    "_019_",
+    "_020_",
     "_020_",
     "_020_",
     "_021_",
     "_021_",
     "_022_",
-    "_023_",
+    "\\iRECEIVER.countH",
+    "\\iRECEIVER.countH",
+    "\\iRECEIVER.countH",
+    "\\iRECEIVER.countH",
+    "\\iRECEIVER.countH",
+    "\\iRECEIVER.countH",
+    "\\iRECEIVER.countH",
     "_023_",
     "_024_",
+    "_024_",
+    "_024_",
     "_025_",
-    "\\iRECEIVER.countH",
-    "\\iRECEIVER.countH",
-    "\\iRECEIVER.countH",
-    "\\iRECEIVER.countH",
-    "\\iRECEIVER.countH",
-    "\\iRECEIVER.countH",
-    "\\iRECEIVER.countH",
+    "_025_",
     "_026_",
     "_027_",
     "_028_",
     "_029_",
     "_029_",
     "_030_",
-    "_030_",
+    "\\iRECEIVER.rec_readyInH",
     "_031_",
     "_032_",
     "_033_",
+    "_033_",
     "_034_",
-    "\\iRECEIVER.rec_readyInH",
     "_035_",
     "_036_",
     "_037_",
@@ -767,7 +766,7 @@
     "_053_",
     "_054_",
     "_055_",
-    "_055_",
+    "_056_",
     "_056_",
     "\\iXMIT.next_state [2]",
     "_009_"
