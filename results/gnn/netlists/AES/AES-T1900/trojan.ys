@@ -14,4 +14,4 @@ techmap
 opt
 abc
 opt
-write_verilog -noexpr "/home/shreya/HT_detection_GNN/trusthub/netlists/AES/AES-T1900/trojan_netlist.v"
+write_verilog -noexpr "/home/shreya/CAPSTONE/results/gnn/netlists/AES/AES-T1900/trojan_netlist.v"

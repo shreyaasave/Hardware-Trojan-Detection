@@ -6,7 +6,7 @@
  \----------------------------------------------------------------------------/
  Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
 
--- Executing script file `/home/shreya/HT_detection_GNN/trusthub/netlists/AES/AES-T1600/trojan.ys' --
+-- Executing script file `/home/shreya/CAPSTONE/results/gnn/netlists/AES/AES-T1600/trojan.ys' --
 
 1. Executing Verilog-2005 frontend: /home/shreya/HT_detection_GNN/trusthub/AES_unzipped/AES-T1600/AES-T1600/src/TjIn/AM_Transmission.v
 Parsing Verilog input from `/home/shreya/HT_detection_GNN/trusthub/AES_unzipped/AES-T1600/AES-T1600/src/TjIn/AM_Transmission.v' to AST representation.
@@ -925,7 +925,7 @@ Optimizing module top.
 Dumping module `\top'.
 
 Warnings: 9 unique messages, 9 total
-End of script. Logfile hash: 46aeb31d53, time: 3.30s, user: 2.15s, system: 0.07s, MEM: 65.37 MB peak
+End of script. Logfile hash: 0c2a868e7a, time: 2.93s, user: 1.83s, system: 0.05s, MEM: 65.36 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 42% 1x abc (1 sec), 20% 9x opt_clean (0 sec), ...
+Time spent: 45% 1x abc (1 sec), 18% 9x opt_clean (0 sec), ...
 
