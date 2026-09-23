@@ -1,6 +1,6 @@
 {
     "module": "aes_128",
-    "source": "/home/shreya/HT_detection_GNN/trusthub/netlists/AES/AES-T2600/trojan_netlist.v",
+    "source": "/home/shreya/CAPSTONE/results/gnn/netlists/AES/AES-T2600/trojan_netlist.v",
     "label": 1,
     "num_gates": 7918,
     "gates": [

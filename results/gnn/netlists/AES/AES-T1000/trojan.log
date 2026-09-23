@@ -887,7 +887,13 @@ Optimizing module top.
 Dumping module `\top'.
 
 Warnings: 1 unique messages, 1 total
+<<<<<<< HEAD
 End of script. Logfile hash: 53ff6fa8f3, time: 2.59s, user: 1.63s, system: 0.05s, MEM: 63.78 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
 Time spent: 43% 1x abc (1 sec), 21% 8x opt_clean (0 sec), ...
+=======
+End of script. Logfile hash: 53ff6fa8f3, time: 3.23s, user: 2.06s, system: 0.07s, MEM: 63.79 MB peak
+Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 42% 1x abc (1 sec), 21% 8x opt_clean (0 sec), ...
+>>>>>>> main
 

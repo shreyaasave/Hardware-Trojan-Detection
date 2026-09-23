@@ -1,6 +1,6 @@
 {
     "module": "uart",
-    "source": "/home/shreya/HT_detection_GNN/trusthub/netlists/RS232/RS232-T200/standard_netlist.v",
+    "source": "/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T200/standard_netlist.v",
     "label": 1,
     "num_gates": 67,
     "gates": [
@@ -221,7 +221,7 @@
             }
         },
         {
-            "type": "\\$_ANDNOT_",
+            "type": "\\$_ORNOT_",
             "name": "_081_",
             "ports": {
                 "A": "\\iXMIT.state [2]",
@@ -230,65 +230,65 @@
             }
         },
         {
-            "type": "\\$_ANDNOT_",
+            "type": "\\$_NOR_",
             "name": "_082_",
             "ports": {
-                "A": "\\iXMIT.state [1]",
-                "B": "\\iXMIT.state [2]",
+                "A": "\\iXMIT.state [0]",
+                "B": "\\iXMIT.state [1]",
                 "Y": "_030_"
             }
         },
         {
-            "type": "\\$_AND_",
+            "type": "\\$_OR_",
             "name": "_083_",
             "ports": {
-                "A": "\\iXMIT.state [0]",
-                "B": "_030_",
+                "A": "\\iXMIT.state [2]",
+                "B": "xmitH",
                 "Y": "_031_"
             }
         },
         {
-            "type": "\\$_OR_",
+            "type": "\\$_NAND_",
             "name": "_084_",
             "ports": {
-                "A": "_029_",
+                "A": "_030_",
                 "B": "_031_",
-                "Y": "\\iXMIT.next_state [0]"
-            }
-        },
-        {
-            "type": "\\$_AND_",
-            "name": "_085_",
-            "ports": {
-                "A": "\\iRECEIVER.recd_bitCntrH [0]",
-                "B": "\\iRECEIVER.recd_bitCntrH [1]",
                 "Y": "_032_"
             }
         },
         {
             "type": "\\$_NAND_",
-            "name": "_086_",
+            "name": "_085_",
             "ports": {
-                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "A": "_029_",
                 "B": "_032_",
-                "Y": "_033_"
-            }
-        },
-        {
-            "type": "\\$_OR_",
-            "name": "_087_",
-            "ports": {
-                "A": "\\iRECEIVER.recd_bitCntrH [2]",
-                "B": "_032_",
-                "Y": "_034_"
+                "Y": "\\iXMIT.next_state [1]"
             }
         },
         {
             "type": "\\$_AND_",
+            "name": "_086_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [0]",
+                "B": "\\iRECEIVER.recd_bitCntrH [1]",
+                "Y": "_033_"
+            }
+        },
+        {
+            "type": "\\$_NAND_",
+            "name": "_087_",
+            "ports": {
+                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "B": "_033_",
+                "Y": "_034_"
+            }
+        },
+        {
+            "type": "\\$_OR_",
             "name": "_088_",
             "ports": {
-                "A": "\\iRECEIVER.countH",
-                "B": "_034_",
+                "A": "\\iRECEIVER.recd_bitCntrH [2]",
+                "B": "_033_",
                 "Y": "_035_"
             }
         },
@@ -296,41 +296,50 @@
             "type": "\\$_AND_",
             "name": "_089_",
             "ports": {
-                "A": "_033_",
+                "A": "\\iRECEIVER.countH",
                 "B": "_035_",
-                "Y": "_006_"
+                "Y": "_036_"
             }
         },
         {
-            "type": "\\$_NOR_",
+            "type": "\\$_AND_",
             "name": "_090_",
             "ports": {
-                "A": "\\iRECEIVER.recd_bitCntrH [0]",
-                "B": "\\iRECEIVER.recd_bitCntrH [1]",
-                "Y": "_036_"
+                "A": "_034_",
+                "B": "_036_",
+                "Y": "_006_"
             }
         },
         {
             "type": "\\$_NOR_",
             "name": "_091_",
             "ports": {
-                "A": "_032_",
-                "B": "_036_",
+                "A": "\\iRECEIVER.recd_bitCntrH [0]",
+                "B": "\\iRECEIVER.recd_bitCntrH [1]",
                 "Y": "_037_"
             }
         },
         {
-            "type": "\\$_AND_",
+            "type": "\\$_NOR_",
             "name": "_092_",
             "ports": {
-                "A": "\\iRECEIVER.countH",
+                "A": "_033_",
                 "B": "_037_",
+                "Y": "_038_"
+            }
+        },
+        {
+            "type": "\\$_AND_",
+            "name": "_093_",
+            "ports": {
+                "A": "\\iRECEIVER.countH",
+                "B": "_038_",
                 "Y": "_005_"
             }
         },
         {
             "type": "\\$_ANDNOT_",
-            "name": "_093_",
+            "name": "_094_",
             "ports": {
                 "A": "\\iRECEIVER.countH",
                 "B": "\\iRECEIVER.recd_bitCntrH [0]",
@@ -338,28 +347,19 @@
             }
         },
         {
-            "type": "\\$_NOR_",
-            "name": "_094_",
-            "ports": {
-                "A": "\\iXMIT.state [1]",
-                "B": "\\iXMIT.state [0]",
-                "Y": "_038_"
-            }
-        },
-        {
-            "type": "\\$_OR_",
+            "type": "\\$_ANDNOT_",
             "name": "_095_",
             "ports": {
-                "A": "\\iXMIT.state [2]",
-                "B": "xmitH",
+                "A": "_018_",
+                "B": "\\iRECEIVER.state [2]",
                 "Y": "_039_"
             }
         },
         {
-            "type": "\\$_AND_",
+            "type": "\\$_NOR_",
             "name": "_096_",
             "ports": {
-                "A": "_038_",
+                "A": "_014_",
                 "B": "_039_",
                 "Y": "_040_"
             }
@@ -368,62 +368,62 @@
             "type": "\\$_OR_",
             "name": "_097_",
             "ports": {
-                "A": "_030_",
+                "A": "\\iRECEIVER.rec_datH",
                 "B": "_040_",
-                "Y": "\\iXMIT.next_state [1]"
-            }
-        },
-        {
-            "type": "\\$_ANDNOT_",
-            "name": "_098_",
-            "ports": {
-                "A": "_018_",
-                "B": "\\iRECEIVER.state [2]",
                 "Y": "_041_"
             }
         },
         {
-            "type": "\\$_NOR_",
-            "name": "_099_",
+            "type": "\\$_ORNOT_",
+            "name": "_098_",
             "ports": {
-                "A": "_014_",
-                "B": "_041_",
+                "A": "_021_",
+                "B": "_022_",
                 "Y": "_042_"
             }
         },
         {
-            "type": "\\$_OR_",
-            "name": "_100_",
+            "type": "\\$_ANDNOT_",
+            "name": "_099_",
             "ports": {
-                "A": "\\iRECEIVER.rec_datH",
-                "B": "_042_",
+                "A": "_014_",
+                "B": "_012_",
                 "Y": "_043_"
             }
         },
         {
-            "type": "\\$_ORNOT_",
-            "name": "_101_",
+            "type": "\\$_NOR_",
+            "name": "_100_",
             "ports": {
-                "A": "_021_",
-                "B": "_022_",
+                "A": "\\iRECEIVER.countH",
+                "B": "_043_",
                 "Y": "_044_"
             }
         },
         {
-            "type": "\\$_ANDNOT_",
-            "name": "_102_",
+            "type": "\\$_AND_",
+            "name": "_101_",
             "ports": {
-                "A": "_014_",
-                "B": "_012_",
+                "A": "_041_",
+                "B": "_044_",
                 "Y": "_045_"
             }
         },
         {
-            "type": "\\$_NOR_",
+            "type": "\\$_NAND_",
+            "name": "_102_",
+            "ports": {
+                "A": "_042_",
+                "B": "_045_",
+                "Y": "\\iRECEIVER.next_state [1]"
+            }
+        },
+        {
+            "type": "\\$_OR_",
             "name": "_103_",
             "ports": {
-                "A": "\\iRECEIVER.countH",
-                "B": "_045_",
+                "A": "\\iRECEIVER.state [2]",
+                "B": "\\iRECEIVER.rec_datH",
                 "Y": "_046_"
             }
         },
@@ -431,26 +431,26 @@
             "type": "\\$_AND_",
             "name": "_104_",
             "ports": {
-                "A": "_043_",
+                "A": "_018_",
                 "B": "_046_",
+                "Y": "\\iRECEIVER.rec_readyInH"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
+            "name": "_105_",
+            "ports": {
+                "A": "_042_",
+                "B": "\\iRECEIVER.rec_readyInH",
                 "Y": "_047_"
             }
         },
         {
-            "type": "\\$_NAND_",
-            "name": "_105_",
-            "ports": {
-                "A": "_044_",
-                "B": "_047_",
-                "Y": "\\iRECEIVER.next_state [1]"
-            }
-        },
-        {
-            "type": "\\$_OR_",
+            "type": "\\$_ANDNOT_",
             "name": "_106_",
             "ports": {
-                "A": "\\iRECEIVER.state [2]",
-                "B": "\\iRECEIVER.rec_datH",
+                "A": "\\iRECEIVER.recd_bitCntrH [3]",
+                "B": "\\iRECEIVER.recd_bitCntrH [2]",
                 "Y": "_048_"
             }
         },
@@ -458,63 +458,63 @@
             "type": "\\$_AND_",
             "name": "_107_",
             "ports": {
-                "A": "_018_",
+                "A": "_037_",
                 "B": "_048_",
-                "Y": "\\iRECEIVER.rec_readyInH"
-            }
-        },
-        {
-            "type": "\\$_ANDNOT_",
-            "name": "_108_",
-            "ports": {
-                "A": "_044_",
-                "B": "\\iRECEIVER.rec_readyInH",
                 "Y": "_049_"
             }
         },
         {
-            "type": "\\$_ANDNOT_",
-            "name": "_109_",
+            "type": "\\$_NAND_",
+            "name": "_108_",
             "ports": {
-                "A": "\\iRECEIVER.recd_bitCntrH [3]",
-                "B": "\\iRECEIVER.recd_bitCntrH [2]",
+                "A": "_022_",
+                "B": "_049_",
                 "Y": "_050_"
             }
         },
         {
             "type": "\\$_AND_",
-            "name": "_110_",
+            "name": "_109_",
             "ports": {
-                "A": "_036_",
+                "A": "_047_",
                 "B": "_050_",
                 "Y": "_051_"
             }
         },
         {
             "type": "\\$_NAND_",
+            "name": "_110_",
+            "ports": {
+                "A": "_017_",
+                "B": "_051_",
+                "Y": "\\iRECEIVER.next_state [0]"
+            }
+        },
+        {
+            "type": "\\$_ANDNOT_",
             "name": "_111_",
             "ports": {
-                "A": "_022_",
-                "B": "_051_",
+                "A": "\\iXMIT.state [2]",
+                "B": "\\iXMIT.state [1]",
                 "Y": "_052_"
             }
         },
         {
-            "type": "\\$_AND_",
+            "type": "\\$_ANDNOT_",
             "name": "_112_",
             "ports": {
-                "A": "_049_",
-                "B": "_052_",
+                "A": "\\iXMIT.state [0]",
+                "B": "_029_",
                 "Y": "_053_"
             }
         },
         {
-            "type": "\\$_NAND_",
+            "type": "\\$_OR_",
             "name": "_113_",
             "ports": {
-                "A": "_017_",
+                "A": "_052_",
                 "B": "_053_",
-                "Y": "\\iRECEIVER.next_state [0]"
+                "Y": "\\iXMIT.next_state [0]"
             }
         },
         {
@@ -522,7 +522,7 @@
             "name": "_114_",
             "ports": {
                 "A": "\\iRECEIVER.recd_bitCntrH [3]",
-                "B": "_033_",
+                "B": "_034_",
                 "Y": "_054_"
             }
         },
@@ -558,7 +558,7 @@
             "name": "_118_",
             "ports": {
                 "A": "\\iXMIT.state [0]",
-                "B": "_029_",
+                "B": "_052_",
                 "Y": "\\iXMIT.next_state [2]"
             }
         },
@@ -566,7 +566,7 @@
             "type": "\\$_ANDNOT_",
             "name": "_119_",
             "ports": {
-                "A": "_038_",
+                "A": "_030_",
                 "B": "\\iXMIT.state [2]",
                 "Y": "_056_"
             }
@@ -584,8 +584,8 @@
             "type": "\\$_ANDNOT_",
             "name": "_121_",
             "ports": {
-                "A": "_038_",
-                "B": "_039_",
+                "A": "_030_",
+                "B": "_031_",
                 "Y": "\\iXMIT.xmit_doneInH"
             }
         },
@@ -594,7 +594,7 @@
             "name": "_122_",
             "ports": {
                 "A": "\\iRECEIVER.rec_datH",
-                "B": "_041_",
+                "B": "_039_",
                 "Y": "_009_"
             }
         },

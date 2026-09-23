@@ -1354,7 +1354,13 @@ Couldn't topologically sort cells, optimizing module top may take a longer time.
 Dumping module `\top'.
 
 Warnings: 5 unique messages, 5 total
+<<<<<<< HEAD
 End of script. Logfile hash: 4e0f890ab3, time: 2.99s, user: 1.95s, system: 0.07s, MEM: 66.35 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
 Time spent: 41% 1x abc (1 sec), 20% 10x opt_clean (0 sec), ...
+=======
+End of script. Logfile hash: 4e0f890ab3, time: 3.43s, user: 2.22s, system: 0.08s, MEM: 65.98 MB peak
+Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 42% 1x abc (1 sec), 20% 10x opt_clean (0 sec), ...
+>>>>>>> main
 

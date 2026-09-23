@@ -4,31 +4,31 @@
  |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
  |  Distributed under an ISC-like license, type "license" to see terms        |
  \----------------------------------------------------------------------------/
- Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
+ Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
 
--- Executing script file `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard.ys' --
+-- Executing script file `/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard.ys' --
 
-1. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v
-Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v
+Parsing Verilog input from `/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v' to AST representation.
 Generating RTLIL representation for module `\u_rec'.
-Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85.1-155.4 in
+Note: Assuming pure combinatorial block at /home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85.1-155.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v
-Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v' to AST representation.
+2. Executing Verilog-2005 frontend: /home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v
+Parsing Verilog input from `/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v' to AST representation.
 Generating RTLIL representation for module `\u_xmit'.
-Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42.1-49.10 in
+Note: Assuming pure combinatorial block at /home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42.1-49.10 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81.1-187.4 in
+Note: Assuming pure combinatorial block at /home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81.1-187.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v
-Parsing Verilog input from `C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v' to AST representation.
+3. Executing Verilog-2005 frontend: /home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v
+Parsing Verilog input from `/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v' to AST representation.
 Generating RTLIL representation for module `\uart'.
 Successfully finished Verilog frontend.
 
@@ -51,25 +51,25 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:80$51 in module uart.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:70$49 in module uart.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:235$47 in module u_xmit.
-Marked 6 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:193$40 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:189$37 in module u_xmit.
-Marked 8 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:76$30 in module u_xmit.
-Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:70$27 in module u_xmit.
-Marked 3 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:59$25 in module u_xmit.
-Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:52$22 in module u_xmit.
-Removed 1 dead cases from process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42$21 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42$21 in module u_xmit.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:158$19 in module u_rec.
-Marked 6 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:80$11 in module u_rec.
-Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:72$8 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:64$6 in module u_rec.
-Marked 2 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:58$3 in module u_rec.
-Marked 1 switch rules as full_case in process $proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:48$1 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:80$51 in module uart.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:70$49 in module uart.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:235$47 in module u_xmit.
+Marked 6 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:193$40 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:189$37 in module u_xmit.
+Marked 8 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:76$30 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:70$27 in module u_xmit.
+Marked 3 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:59$25 in module u_xmit.
+Marked 2 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:52$22 in module u_xmit.
+Removed 1 dead cases from process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42$21 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42$21 in module u_xmit.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:158$19 in module u_rec.
+Marked 6 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:80$11 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:72$8 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:64$6 in module u_rec.
+Marked 2 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:58$3 in module u_rec.
+Marked 1 switch rules as full_case in process $proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:48$1 in module u_rec.
 Removed a total of 1 dead cases.
 
 5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -79,38 +79,38 @@ Promoted 16 assignments to connections.
 5.4. Executing PROC_INIT pass (extract init attributes).
 
 5.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \sys_rst_l in `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:80$51'.
-Found async reset \sys_rst_l in `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:70$49'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:235$47'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:193$40'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:189$37'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:76$30'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:70$27'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:59$25'.
-Found async reset \sys_rst_l in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:52$22'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:158$19'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:80$11'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:72$8'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:64$6'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:58$3'.
-Found async reset \sys_rst_l in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:48$1'.
+Found async reset \sys_rst_l in `\uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:80$51'.
+Found async reset \sys_rst_l in `\uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:70$49'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:235$47'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:193$40'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:189$37'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:76$30'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:70$27'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:59$25'.
+Found async reset \sys_rst_l in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:52$22'.
+Found async reset \sys_rst_l in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:158$19'.
+Found async reset \sys_rst_l in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:80$11'.
+Found async reset \sys_rst_l in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:72$8'.
+Found async reset \sys_rst_l in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:64$6'.
+Found async reset \sys_rst_l in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:58$3'.
+Found async reset \sys_rst_l in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:48$1'.
 
 5.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 <suppressed ~31 debug messages>
 
 5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:80$51'.
+Creating decoders for process `\uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:80$51'.
      1/1: $0\rec_dataH_temp[7:0]
-Creating decoders for process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:70$49'.
+Creating decoders for process `\uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:70$49'.
      1/1: $1\rec_dataH[7:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:235$47'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:235$47'.
      1/1: $0\xmit_doneH[0:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:193$40'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:193$40'.
      1/1: $0\state_DataSend[2:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:189$37'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:189$37'.
      1/1: $0\DataSend_ena[0:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
      1/30: $3\xmit_doneInH[0:0]
      2/30: $8\next_state[2:0]
      3/30: $5\countEnaH[0:0]
@@ -141,20 +141,20 @@ Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlis
     28/30: $1\bitCountH[3:0]
     29/30: $1\xmit_ShiftRegH[7:0]
     30/30: $1\bitCell_cntrH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:76$30'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:76$30'.
      1/1: $0\state[2:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:70$27'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:70$27'.
      1/1: $0\bitCountH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:59$25'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:59$25'.
      1/2: $0\xmit_ShiftRegH[7:0] [7]
      2/2: $0\xmit_ShiftRegH[7:0] [6:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:52$22'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:52$22'.
      1/1: $0\bitCell_cntrH[3:0]
-Creating decoders for process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42$21'.
+Creating decoders for process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42$21'.
      1/1: $1\uart_xmitH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:158$19'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:158$19'.
      1/1: $0\rec_readyH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
      1/15: $6\next_state[2:0]
      2/15: $5\next_state[2:0]
      3/15: $3\cntr_resetH[0:0]
@@ -170,112 +170,112 @@ Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlist
     13/15: $1\countH[0:0]
     14/15: $1\shiftH[0:0]
     15/15: $1\cntr_resetH[0:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:80$11'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:80$11'.
      1/1: $0\state[2:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:72$8'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:72$8'.
      1/1: $0\recd_bitCntrH[3:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:64$6'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:64$6'.
      1/2: $0\par_dataH[7:0] [7]
      2/2: $0\par_dataH[7:0] [6:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:58$3'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:58$3'.
      1/1: $0\bitCell_cntrH[3:0]
-Creating decoders for process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:48$1'.
+Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:48$1'.
      1/2: $0\rec_datH[0:0]
      2/2: $0\rec_datSyncH[0:0]
 
 5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-Latch inferred for signal `\u_xmit.\bitCell_cntrH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32': $auto$proc_dlatch.cc:439:proc_dlatch$543
-Latch inferred for signal `\u_xmit.\xmit_ShiftRegH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32': $auto$proc_dlatch.cc:439:proc_dlatch$558
-Latch inferred for signal `\u_xmit.\bitCountH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32': $auto$proc_dlatch.cc:439:proc_dlatch$573
-No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42$21'.
-No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
+No latch inferred for signal `\u_xmit.\next_state' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\load_shiftRegH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\shiftEnaH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\countEnaH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\rst_bitCountH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\ena_bitCountH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\xmitDataSelH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+No latch inferred for signal `\u_xmit.\xmit_doneInH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+Warning: Latch inferred for signal `\u_xmit.\bitCell_cntrH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32': $auto$proc_dlatch.cc:543:proc_dlatch$537
+Warning: Latch inferred for signal `\u_xmit.\xmit_ShiftRegH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32': $auto$proc_dlatch.cc:543:proc_dlatch$564
+Warning: Latch inferred for signal `\u_xmit.\bitCountH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32': $auto$proc_dlatch.cc:543:proc_dlatch$585
+No latch inferred for signal `\u_xmit.\uart_xmitH' from process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42$21'.
+No latch inferred for signal `\u_rec.\next_state' from process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\cntr_resetH' from process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\shiftH' from process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\countH' from process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\rstCountH' from process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+No latch inferred for signal `\u_rec.\rec_readyInH' from process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
 
 5.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:80$51'.
-  created $adff cell `$procdff$578' with positive edge clock and positive level reset.
-Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:70$49'.
-  created $adff cell `$procdff$583' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:235$47'.
-  created $adff cell `$procdff$588' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\state_DataSend' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:193$40'.
-  created $adff cell `$procdff$593' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\DataSend_ena' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:189$37'.
-  created $adff cell `$procdff$598' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:76$30'.
-  created $adff cell `$procdff$603' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:70$27'.
-  created $adff cell `$procdff$608' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:59$25'.
-  created $adff cell `$procdff$613' with positive edge clock and positive level reset.
-Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:52$22'.
-  created $adff cell `$procdff$618' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_readyH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:158$19'.
-  created $adff cell `$procdff$623' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:80$11'.
-  created $adff cell `$procdff$628' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:72$8'.
-  created $adff cell `$procdff$633' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:64$6'.
-  created $adff cell `$procdff$638' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:58$3'.
-  created $adff cell `$procdff$643' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:48$1'.
-  created $adff cell `$procdff$648' with positive edge clock and positive level reset.
-Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:48$1'.
-  created $adff cell `$procdff$653' with positive edge clock and positive level reset.
+Creating register for signal `\uart.\rec_dataH_temp' using process `\uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:80$51'.
+  created $adff cell `$procdff$596' with positive edge clock and positive level reset.
+Creating register for signal `\uart.\rec_dataH' using process `\uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:70$49'.
+  created $adff cell `$procdff$601' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\xmit_doneH' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:235$47'.
+  created $adff cell `$procdff$606' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\state_DataSend' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:193$40'.
+  created $adff cell `$procdff$611' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\DataSend_ena' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:189$37'.
+  created $adff cell `$procdff$616' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\state' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:76$30'.
+  created $adff cell `$procdff$621' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\bitCountH' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:70$27'.
+  created $adff cell `$procdff$626' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\xmit_ShiftRegH' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:59$25'.
+  created $adff cell `$procdff$631' with positive edge clock and positive level reset.
+Creating register for signal `\u_xmit.\bitCell_cntrH' using process `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:52$22'.
+  created $adff cell `$procdff$636' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\rec_readyH' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:158$19'.
+  created $adff cell `$procdff$641' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\state' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:80$11'.
+  created $adff cell `$procdff$646' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\recd_bitCntrH' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:72$8'.
+  created $adff cell `$procdff$651' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\par_dataH' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:64$6'.
+  created $adff cell `$procdff$656' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\bitCell_cntrH' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:58$3'.
+  created $adff cell `$procdff$661' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\rec_datH' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:48$1'.
+  created $adff cell `$procdff$666' with positive edge clock and positive level reset.
+Creating register for signal `\u_rec.\rec_datSyncH' using process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:48$1'.
+  created $adff cell `$procdff$671' with positive edge clock and positive level reset.
 
 5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:80$51'.
-Removing empty process `uart.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\uart.v:70$49'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:235$47'.
-Found and cleaned up 6 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:193$40'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:193$40'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:189$37'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:189$37'.
-Found and cleaned up 8 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:81$32'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:76$30'.
-Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:70$27'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:70$27'.
-Found and cleaned up 2 empty switches in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:59$25'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:59$25'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:52$22'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:52$22'.
-Found and cleaned up 1 empty switch in `\u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42$21'.
-Removing empty process `u_xmit.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_xmit.v:42$21'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:158$19'.
-Found and cleaned up 6 empty switches in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:85$13'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:80$11'.
-Found and cleaned up 2 empty switches in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:72$8'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:72$8'.
-Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:64$6'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:64$6'.
-Found and cleaned up 1 empty switch in `\u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:58$3'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:58$3'.
-Removing empty process `u_rec.$proc$C:\HT_detection_GNN\trusthub\netlists\RS232\RS232-T901\standard_patched_src\u_rec.v:48$1'.
+Removing empty process `uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:80$51'.
+Removing empty process `uart.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/uart.v:70$49'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:235$47'.
+Found and cleaned up 6 empty switches in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:193$40'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:193$40'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:189$37'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:189$37'.
+Found and cleaned up 8 empty switches in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:81$32'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:76$30'.
+Found and cleaned up 2 empty switches in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:70$27'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:70$27'.
+Found and cleaned up 2 empty switches in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:59$25'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:59$25'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:52$22'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:52$22'.
+Found and cleaned up 1 empty switch in `\u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42$21'.
+Removing empty process `u_xmit.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_xmit.v:42$21'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:158$19'.
+Found and cleaned up 6 empty switches in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:85$13'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:80$11'.
+Found and cleaned up 2 empty switches in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:72$8'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:72$8'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:64$6'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:64$6'.
+Found and cleaned up 1 empty switch in `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:58$3'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:58$3'.
+Removing empty process `u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T901/standard_patched_src/u_rec.v:48$1'.
 Cleaned up 31 empty switches.
 
 5.12. Executing OPT_EXPR pass (perform const folding).
 Optimizing module uart.
 <suppressed ~4 debug messages>
 Optimizing module u_xmit.
-<suppressed ~53 debug messages>
+<suppressed ~69 debug messages>
 Optimizing module u_rec.
 <suppressed ~18 debug messages>
 
@@ -294,26 +294,24 @@ Computing hashes of 5 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 <suppressed ~9 debug messages>
 Finding identical cells in module `\u_xmit'.
-Computing hashes of 193 cells of `\u_xmit'.
+Computing hashes of 186 cells of `\u_xmit'.
 Finding duplicate cells in `\u_xmit'.
-Computing hashes of 114 cells of `\u_xmit'.
+Computing hashes of 107 cells of `\u_xmit'.
 Finding duplicate cells in `\u_xmit'.
-Computing hashes of 110 cells of `\u_xmit'.
+Computing hashes of 103 cells of `\u_xmit'.
 Finding duplicate cells in `\u_xmit'.
-Computing hashes of 108 cells of `\u_xmit'.
+Computing hashes of 102 cells of `\u_xmit'.
 Finding duplicate cells in `\u_xmit'.
-Computing hashes of 105 cells of `\u_xmit'.
+Computing hashes of 101 cells of `\u_xmit'.
 Finding duplicate cells in `\u_xmit'.
-Computing hashes of 104 cells of `\u_xmit'.
-Finding duplicate cells in `\u_xmit'.
-<suppressed ~267 debug messages>
+<suppressed ~255 debug messages>
 Finding identical cells in module `\u_rec'.
 Computing hashes of 97 cells of `\u_rec'.
 Finding duplicate cells in `\u_rec'.
 Computing hashes of 50 cells of `\u_rec'.
 Finding duplicate cells in `\u_rec'.
 <suppressed ~141 debug messages>
-Removed a total of 139 cells.
+Removed a total of 135 cells.
 
 6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \uart..
@@ -367,21 +365,21 @@ Removed 34 multiplexer ports.
 6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \uart.
   Optimizing cells in module \u_xmit.
-    New ctrl vector for $pmux cell $procmux$307: { $procmux$316_CMP $auto$opt_reduce.cc:135:opt_pmux$655 $procmux$318_CMP $procmux$320_CMP }
-    New ctrl vector for $pmux cell $procmux$259: { $procmux$316_CMP $auto$opt_reduce.cc:135:opt_pmux$657 $procmux$354_CMP }
-    New ctrl vector for $pmux cell $procmux$315: { $auto$opt_reduce.cc:135:opt_pmux$659 $procmux$317_CMP }
-    New ctrl vector for $pmux cell $procmux$299: { $auto$opt_reduce.cc:135:opt_pmux$661 $procmux$318_CMP }
-    New ctrl vector for $pmux cell $procmux$267: { $auto$opt_reduce.cc:135:opt_pmux$663 $procmux$354_CMP }
-    New ctrl vector for $pmux cell $procmux$291: { $auto$opt_reduce.cc:135:opt_pmux$667 $auto$opt_reduce.cc:135:opt_pmux$665 $procmux$319_CMP $procmux$320_CMP }
-    New ctrl vector for $pmux cell $procmux$375: { $procmux$376_CMP $auto$opt_reduce.cc:135:opt_pmux$669 $procmux$378_CMP }
-    New ctrl vector for $pmux cell $procmux$275: { $auto$opt_reduce.cc:135:opt_pmux$671 $procmux$354_CMP }
+    New ctrl vector for $pmux cell $procmux$299: { $auto$opt_reduce.cc:137:opt_pmux$673 $procmux$318_CMP }
+    New ctrl vector for $pmux cell $procmux$259: { $procmux$316_CMP $auto$opt_reduce.cc:137:opt_pmux$675 $procmux$354_CMP }
+    New ctrl vector for $pmux cell $procmux$375: { $procmux$376_CMP $auto$opt_reduce.cc:137:opt_pmux$677 $procmux$378_CMP }
+    New ctrl vector for $pmux cell $procmux$307: { $procmux$316_CMP $auto$opt_reduce.cc:137:opt_pmux$679 $procmux$318_CMP $procmux$320_CMP }
+    New ctrl vector for $pmux cell $procmux$267: { $auto$opt_reduce.cc:137:opt_pmux$681 $procmux$354_CMP }
+    New ctrl vector for $pmux cell $procmux$291: { $auto$opt_reduce.cc:137:opt_pmux$685 $auto$opt_reduce.cc:137:opt_pmux$683 $procmux$319_CMP $procmux$320_CMP }
+    New ctrl vector for $pmux cell $procmux$315: { $auto$opt_reduce.cc:137:opt_pmux$687 $procmux$317_CMP }
+    New ctrl vector for $pmux cell $procmux$275: { $auto$opt_reduce.cc:137:opt_pmux$689 $procmux$354_CMP }
   Optimizing cells in module \u_xmit.
   Optimizing cells in module \u_rec.
-    New ctrl vector for $pmux cell $procmux$489: { $auto$opt_reduce.cc:135:opt_pmux$673 $procmux$505_CMP }
-    New ctrl vector for $pmux cell $procmux$496: { $auto$opt_reduce.cc:135:opt_pmux$675 $procmux$505_CMP }
-    New ctrl vector for $pmux cell $procmux$468: { $procmux$504_CMP $auto$opt_reduce.cc:135:opt_pmux$677 $procmux$508_CMP }
-    New ctrl vector for $pmux cell $procmux$475: { $auto$opt_reduce.cc:135:opt_pmux$679 $procmux$508_CMP }
-    New ctrl vector for $pmux cell $procmux$503: { $auto$opt_reduce.cc:135:opt_pmux$681 $procmux$506_CMP $procmux$507_CMP }
+    New ctrl vector for $pmux cell $procmux$489: { $auto$opt_reduce.cc:137:opt_pmux$691 $procmux$505_CMP }
+    New ctrl vector for $pmux cell $procmux$496: { $auto$opt_reduce.cc:137:opt_pmux$693 $procmux$505_CMP }
+    New ctrl vector for $pmux cell $procmux$468: { $procmux$504_CMP $auto$opt_reduce.cc:137:opt_pmux$695 $procmux$508_CMP }
+    New ctrl vector for $pmux cell $procmux$475: { $auto$opt_reduce.cc:137:opt_pmux$697 $procmux$508_CMP }
+    New ctrl vector for $pmux cell $procmux$503: { $auto$opt_reduce.cc:137:opt_pmux$699 $procmux$506_CMP $procmux$507_CMP }
   Optimizing cells in module \u_rec.
 Performed a total of 13 changes.
 
@@ -390,9 +388,9 @@ Finding identical cells in module `\uart'.
 Computing hashes of 5 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 Finding identical cells in module `\u_xmit'.
-Computing hashes of 90 cells of `\u_xmit'.
-Finding duplicate cells in `\u_xmit'.
 Computing hashes of 87 cells of `\u_xmit'.
+Finding duplicate cells in `\u_xmit'.
+Computing hashes of 84 cells of `\u_xmit'.
 Finding duplicate cells in `\u_xmit'.
 <suppressed ~9 debug messages>
 Finding identical cells in module `\u_rec'.
@@ -406,41 +404,42 @@ Finding duplicate cells in `\u_rec'.
 Removed a total of 6 cells.
 
 6.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$613 ($adff) from module u_xmit (D = { $procmux$364_Y $procmux$370_Y }, Q = \xmit_ShiftRegH).
-Adding EN signal on $procdff$593 ($adff) from module u_xmit (D = $procmux$56_Y, Q = \state_DataSend).
-Adding EN signal on $procdff$598 ($adff) from module u_xmit (D = 1'1, Q = \DataSend_ena).
-Adding EN signal on $procdff$608 ($adff) from module u_xmit (D = $procmux$358_Y, Q = \bitCountH).
-Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:439:proc_dlatch$573 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 1 on $auto$proc_dlatch.cc:439:proc_dlatch$573 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 2 on $auto$proc_dlatch.cc:439:proc_dlatch$573 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 3 on $auto$proc_dlatch.cc:439:proc_dlatch$573 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 1 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 2 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 3 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 4 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 5 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 6 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Setting constant 0-bit at position 7 on $auto$proc_dlatch.cc:439:proc_dlatch$558 ($dlatch) from module u_xmit.
-Adding EN signal on $procdff$633 ($adff) from module u_rec (D = $procmux$512_Y, Q = \recd_bitCntrH).
-Adding EN signal on $procdff$638 ($adff) from module u_rec (D = \rec_datH, Q = \par_dataH [7]).
-Adding EN signal on $procdff$638 ($adff) from module u_rec (D = \par_dataH [7:1], Q = \par_dataH [6:0]).
+Adding EN signal on $procdff$631 ($adff) from module u_xmit (D = { $procmux$364_Y $procmux$370_Y }, Q = \xmit_ShiftRegH).
+Adding EN signal on $procdff$611 ($adff) from module u_xmit (D = $procmux$56_Y, Q = \state_DataSend).
+Removing never-active async load on $auto$proc_dlatch.cc:543:proc_dlatch$537 ($adlatch) from module u_xmit.
+Removing never-active async load on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($adlatch) from module u_xmit.
+Adding EN signal on $procdff$616 ($adff) from module u_xmit (D = 1'1, Q = \DataSend_ena).
+Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 1 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 2 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 3 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 4 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 5 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 6 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 7 on $auto$proc_dlatch.cc:543:proc_dlatch$564 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:543:proc_dlatch$537 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 1 on $auto$proc_dlatch.cc:543:proc_dlatch$537 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 2 on $auto$proc_dlatch.cc:543:proc_dlatch$537 ($dlatch) from module u_xmit.
+Setting constant 0-bit at position 3 on $auto$proc_dlatch.cc:543:proc_dlatch$537 ($dlatch) from module u_xmit.
+Adding EN signal on $procdff$651 ($adff) from module u_rec (D = $procmux$512_Y, Q = \recd_bitCntrH).
+Adding EN signal on $procdff$656 ($adff) from module u_rec (D = \rec_datH, Q = \par_dataH [7]).
+Adding EN signal on $procdff$656 ($adff) from module u_rec (D = \par_dataH [7:1], Q = \par_dataH [6:0]).
 
 6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \uart..
 Finding unused cells or wires in module \u_xmit..
-Warning: Driver-driver conflict for \bitCountH [0] between cell $auto$ff.cc:337:slice$689.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCountH [1] between cell $auto$ff.cc:337:slice$689.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCountH [2] between cell $auto$ff.cc:337:slice$689.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCountH [3] between cell $auto$ff.cc:337:slice$689.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCell_cntrH [0] between cell $procdff$618.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCell_cntrH [1] between cell $procdff$618.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCell_cntrH [2] between cell $procdff$618.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \bitCell_cntrH [3] between cell $procdff$618.Q and constant 1'0 in u_xmit: Resolved using constant.
-Warning: Driver-driver conflict for \xmit_ShiftRegH [0] between cell $auto$ff.cc:337:slice$682.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCell_cntrH [0] between cell $procdff$636.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCell_cntrH [1] between cell $procdff$636.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCell_cntrH [2] between cell $procdff$636.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCell_cntrH [3] between cell $procdff$636.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \xmit_ShiftRegH [0] between cell $auto$ff.cc:337:slice$700.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCountH [0] between cell $procdff$626.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCountH [1] between cell $procdff$626.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCountH [2] between cell $procdff$626.Q and constant 1'0 in u_xmit: Resolved using constant.
+Warning: Driver-driver conflict for \bitCountH [3] between cell $procdff$626.Q and constant 1'0 in u_xmit: Resolved using constant.
 Finding unused cells or wires in module \u_rec..
-Removed 40 unused cells and 396 unused wires.
-<suppressed ~48 debug messages>
+Removed 36 unused cells and 404 unused wires.
+<suppressed ~44 debug messages>
 
 6.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module uart.
@@ -469,11 +468,11 @@ Removed 0 multiplexer ports.
 6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \uart.
   Optimizing cells in module \u_xmit.
-    New ctrl vector for $pmux cell $procmux$375: { $procmux$378_CMP $auto$opt_reduce.cc:135:opt_pmux$698 }
-    New ctrl vector for $pmux cell $procmux$259: { $procmux$224_CMP $auto$opt_reduce.cc:135:opt_pmux$700 }
-    New ctrl vector for $pmux cell $procmux$283: { $procmux$260_CMP $auto$opt_reduce.cc:135:opt_pmux$702 $procmux$148_CMP $procmux$170_CMP $procmux$224_CMP }
-    New input vector for $reduce_or cell $auto$opt_reduce.cc:129:opt_pmux$697: { $procmux$379_CMP $procmux$377_CMP $procmux$376_CMP }
-    New input vector for $reduce_or cell $auto$opt_reduce.cc:129:opt_pmux$699: { $procmux$261_CMP $procmux$260_CMP $procmux$170_CMP $procmux$148_CMP $procmux$104_CMP }
+    New ctrl vector for $pmux cell $procmux$375: { $procmux$378_CMP $auto$opt_reduce.cc:137:opt_pmux$715 }
+    New ctrl vector for $pmux cell $procmux$283: { $procmux$260_CMP $auto$opt_reduce.cc:137:opt_pmux$717 $procmux$148_CMP $procmux$170_CMP $auto$rtlil.cc:3298:And$533 }
+    New ctrl vector for $pmux cell $procmux$259: { $auto$rtlil.cc:3298:And$533 $auto$opt_reduce.cc:137:opt_pmux$719 }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$714: { $procmux$379_CMP $procmux$377_CMP $procmux$376_CMP }
+    New input vector for $reduce_or cell $auto$opt_reduce.cc:131:opt_pmux$718: { $procmux$261_CMP $procmux$260_CMP $procmux$170_CMP $procmux$148_CMP $procmux$104_CMP }
   Optimizing cells in module \u_xmit.
   Optimizing cells in module \u_rec.
 Performed a total of 5 changes.
@@ -602,8 +601,8 @@ Optimizing module uart.
 
 9. Executing TECHMAP pass (map to technology primitives).
 
-9.1. Executing Verilog-2005 frontend: C:\Users\saher\DOWNLO~1\OSS-CA~1\bin\../share/yosys/techmap.v
-Parsing Verilog input from `C:\Users\saher\DOWNLO~1\OSS-CA~1\bin\../share/yosys/techmap.v' to AST representation.
+9.1. Executing Verilog-2005 frontend: /home/shreya/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/home/shreya/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -651,7 +650,7 @@ Using extmapper simplemap for cells of type $xor.
 Using extmapper simplemap for cells of type $and.
 Using extmapper simplemap for cells of type $or.
 No more expansions possible.
-<suppressed ~657 debug messages>
+<suppressed ~630 debug messages>
 
 10. Executing OPT pass (performing simple optimizations).
 
@@ -663,14 +662,14 @@ Optimizing module uart.
 Finding identical cells in module `\uart'.
 Computing hashes of 374 cells of `\uart'.
 Finding duplicate cells in `\uart'.
-Computing hashes of 312 cells of `\uart'.
+Computing hashes of 311 cells of `\uart'.
 Finding duplicate cells in `\uart'.
-Computing hashes of 299 cells of `\uart'.
+Computing hashes of 298 cells of `\uart'.
 Finding duplicate cells in `\uart'.
-Computing hashes of 296 cells of `\uart'.
+Computing hashes of 295 cells of `\uart'.
 Finding duplicate cells in `\uart'.
-<suppressed ~234 debug messages>
-Removed a total of 78 cells.
+<suppressed ~237 debug messages>
+Removed a total of 79 cells.
 
 10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \uart..
@@ -684,7 +683,7 @@ Performed a total of 0 changes.
 
 10.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\uart'.
-Computing hashes of 296 cells of `\uart'.
+Computing hashes of 295 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 Removed a total of 0 cells.
 
@@ -692,7 +691,7 @@ Removed a total of 0 cells.
 
 10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \uart..
-Removed 5 unused cells and 484 unused wires.
+Removed 5 unused cells and 485 unused wires.
 <suppressed ~6 debug messages>
 
 10.8. Executing OPT_EXPR pass (perform const folding).
@@ -712,7 +711,7 @@ Performed a total of 0 changes.
 
 10.12. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\uart'.
-Computing hashes of 291 cells of `\uart'.
+Computing hashes of 290 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 Removed a total of 0 cells.
 
@@ -732,9 +731,11 @@ Optimizing module uart.
 Replacing 18 occurrences of constant undef bits with constant zero bits
 
 11.1.1. Executed ABC.
-Extracted 243 gates and 274 wires to a netlist network with 28 inputs and 24 outputs.
+Extracted 242 gates and 273 wires to a netlist network with 28 inputs and 24 outputs.
 Running ABC script: <abc-temp-dir>/abc.script
-ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  8 2026 05:10:04)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
 ABC: + read_blif <abc-temp-dir>/input.blif 
 ABC: + read_library <abc-temp-dir>/stdcells.genlib 
 ABC: + strash 
@@ -751,19 +752,21 @@ ABC: + &dch -f
 ABC: + &nf 
 ABC: + &put 
 ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
 
 11.1.2. Re-integrating ABC results.
-ABC RESULTS:               AND cells:       45
-ABC RESULTS:            ANDNOT cells:       24
-ABC RESULTS:               MUX cells:        1
-ABC RESULTS:              NAND cells:       22
-ABC RESULTS:               NOR cells:       13
+ABC RESULTS:               AND cells:       41
+ABC RESULTS:            ANDNOT cells:       19
+ABC RESULTS:               MUX cells:        2
+ABC RESULTS:              NAND cells:       23
+ABC RESULTS:               NOR cells:       14
 ABC RESULTS:               NOT cells:        1
-ABC RESULTS:                OR cells:        8
-ABC RESULTS:             ORNOT cells:        4
+ABC RESULTS:                OR cells:        6
+ABC RESULTS:             ORNOT cells:        5
 ABC RESULTS:              XNOR cells:        2
 ABC RESULTS:               XOR cells:        1
-ABC RESULTS:        internal signals:      222
+ABC RESULTS:        internal signals:      221
 ABC RESULTS:           input signals:       28
 ABC RESULTS:          output signals:       24
 Removing temp directory.
@@ -776,7 +779,7 @@ Optimizing module uart.
 
 12.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\uart'.
-Computing hashes of 169 cells of `\uart'.
+Computing hashes of 162 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 Removed a total of 0 cells.
 
@@ -792,7 +795,7 @@ Performed a total of 0 changes.
 
 12.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\uart'.
-Computing hashes of 169 cells of `\uart'.
+Computing hashes of 162 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 Removed a total of 0 cells.
 
@@ -800,7 +803,7 @@ Removed a total of 0 cells.
 
 12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \uart..
-Removed 0 unused cells and 229 unused wires.
+Removed 0 unused cells and 228 unused wires.
 <suppressed ~4 debug messages>
 
 12.8. Executing OPT_EXPR pass (perform const folding).
@@ -820,7 +823,7 @@ Performed a total of 0 changes.
 
 12.12. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\uart'.
-Computing hashes of 169 cells of `\uart'.
+Computing hashes of 162 cells of `\uart'.
 Finding duplicate cells in `\uart'.
 Removed a total of 0 cells.
 
@@ -837,8 +840,8 @@ Optimizing module uart.
 13. Executing Verilog backend.
 Dumping module `\uart'.
 
-Warnings: 9 unique messages, 9 total
-End of script. Logfile hash: acd8d48d9d
-Yosys 0.66+105 (git sha1 72f6df873, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)
-Time spent: 3% 15x opt_expr (0 sec), 3% 13x opt_merge (0 sec), ...
+Warnings: 12 unique messages, 12 total
+End of script. Logfile hash: 5d056ea970, time: 0.19s, user: 0.12s, system: 0.02s, MEM: 23.62 MB peak
+Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 35% 1x abc (0 sec), 15% 7x read_verilog (0 sec), ...
 
