@@ -285,5 +285,5 @@ Dumping module `\uart'.
 Warnings: 1 unique messages, 1 total
 End of script. Logfile hash: e5803c5f7d, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 20.75 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 66% 3x read_verilog (0 sec), 8% 5x opt_clean (0 sec), ...
+Time spent: 67% 3x read_verilog (0 sec), 8% 5x opt_clean (0 sec), ...
 

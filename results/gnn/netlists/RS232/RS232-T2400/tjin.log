@@ -179,7 +179,7 @@ Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/ne
     25/28: $1\countH[0:0]
     26/28: $1\shiftH[0:0]
     27/28: $1\cntr_resetH[0:0]
-    28/28: $display$0x5555773d0f60:120$20_EN
+    28/28: $display$0x55557db29f60:120$20_EN
 Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T2400/tjin_patched_src/u_rec.v:86$13'.
      1/1: $0\state[2:0]
 Creating decoders for process `\u_rec.$proc$/home/shreya/CAPSTONE/results/gnn/netlists/RS232/RS232-T2400/tjin_patched_src/u_rec.v:78$10'.
@@ -847,7 +847,7 @@ Optimizing module uart.
 Dumping module `\uart'.
 
 Warnings: 15 unique messages, 15 total
-End of script. Logfile hash: a31cfc258e, time: 0.18s, user: 0.08s, system: 0.02s, MEM: 23.38 MB peak
+End of script. Logfile hash: d9a19511f2, time: 0.15s, user: 0.08s, system: 0.01s, MEM: 23.38 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 54% 1x abc (0 sec), 9% 7x read_verilog (0 sec), ...
+Time spent: 43% 1x abc (0 sec), 12% 7x read_verilog (0 sec), ...
 

@@ -1395,13 +1395,7 @@ Couldn't topologically sort cells, optimizing module top may take a longer time.
 17. Executing Verilog backend.
 Dumping module `\top'.
 
-<<<<<<< HEAD
-End of script. Logfile hash: 1cea00c830, time: 3.06s, user: 1.85s, system: 0.06s, MEM: 66.40 MB peak
+End of script. Logfile hash: 1cea00c830, time: 3.40s, user: 2.24s, system: 0.06s, MEM: 66.06 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 46% 1x abc (1 sec), 18% 9x opt_clean (0 sec), ...
-=======
-End of script. Logfile hash: 1cea00c830, time: 3.77s, user: 2.50s, system: 0.07s, MEM: 65.87 MB peak
-Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 39% 1x abc (1 sec), 21% 9x opt_clean (0 sec), ...
->>>>>>> main
+Time spent: 40% 1x abc (1 sec), 20% 9x opt_clean (0 sec), ...
 

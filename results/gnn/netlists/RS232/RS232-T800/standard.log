@@ -811,7 +811,7 @@ Optimizing module uart.
 Dumping module `\uart'.
 
 Warnings: 15 unique messages, 15 total
-End of script. Logfile hash: 6407f8d347, time: 0.15s, user: 0.07s, system: 0.01s, MEM: 23.00 MB peak
+End of script. Logfile hash: 6407f8d347, time: 0.16s, user: 0.08s, system: 0.01s, MEM: 23.25 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 51% 1x abc (0 sec), 12% 7x read_verilog (0 sec), ...
+Time spent: 47% 1x abc (0 sec), 12% 7x read_verilog (0 sec), ...
 

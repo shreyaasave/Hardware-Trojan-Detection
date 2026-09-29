@@ -255,5 +255,5 @@ Dumping module `\uart'.
 
 End of script. Logfile hash: b99bfb3d2d, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 21.00 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 75% 3x read_verilog (0 sec), 5% 4x opt_clean (0 sec), ...
+Time spent: 70% 3x read_verilog (0 sec), 7% 4x opt_clean (0 sec), ...
 

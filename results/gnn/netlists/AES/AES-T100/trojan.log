@@ -795,13 +795,7 @@ Optimizing module top.
 16. Executing Verilog backend.
 Dumping module `\top'.
 
-<<<<<<< HEAD
-End of script. Logfile hash: fa0b3295c3, time: 2.62s, user: 1.58s, system: 0.07s, MEM: 63.41 MB peak
+End of script. Logfile hash: fa0b3295c3, time: 2.72s, user: 1.73s, system: 0.06s, MEM: 63.49 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 45% 1x abc (1 sec), 18% 7x opt_clean (0 sec), ...
-=======
-End of script. Logfile hash: fa0b3295c3, time: 3.11s, user: 1.99s, system: 0.07s, MEM: 63.47 MB peak
-Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 41% 1x abc (1 sec), 20% 7x opt_clean (0 sec), ...
->>>>>>> main
+Time spent: 43% 1x abc (1 sec), 21% 7x opt_clean (0 sec), ...
 

@@ -281,7 +281,7 @@ Optimizing module uart.
 11. Executing Verilog backend.
 Dumping module `\uart'.
 
-End of script. Logfile hash: 572b3f28c0, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 20.75 MB peak
+End of script. Logfile hash: 572b3f28c0, time: 0.03s, user: 0.03s, system: 0.01s, MEM: 20.88 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 65% 3x read_verilog (0 sec), 9% 5x opt_clean (0 sec), ...
+Time spent: 68% 3x read_verilog (0 sec), 8% 5x opt_clean (0 sec), ...
 

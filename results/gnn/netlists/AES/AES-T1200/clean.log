@@ -676,13 +676,7 @@ Optimizing module aes_128.
 13. Executing Verilog backend.
 Dumping module `\aes_128'.
 
-<<<<<<< HEAD
-End of script. Logfile hash: 626b660d0b, time: 2.31s, user: 1.38s, system: 0.04s, MEM: 62.87 MB peak
+End of script. Logfile hash: 626b660d0b, time: 2.81s, user: 1.71s, system: 0.07s, MEM: 63.26 MB peak
 Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 47% 1x abc (1 sec), 19% 7x opt_clean (0 sec), ...
-=======
-End of script. Logfile hash: 626b660d0b, time: 3.48s, user: 2.01s, system: 0.08s, MEM: 62.89 MB peak
-Yosys 0.68+201 (git sha1 7c26ff16c-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
-Time spent: 47% 1x abc (1 sec), 21% 7x opt_clean (0 sec), ...
->>>>>>> main
+Time spent: 45% 1x abc (1 sec), 19% 7x opt_clean (0 sec), ...
 
