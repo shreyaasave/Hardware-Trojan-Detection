@@ -1,0 +1,4 @@
+dataset/** linguist-vendored
+results/** linguist-generated
+docs/** linguist-documentation
+
