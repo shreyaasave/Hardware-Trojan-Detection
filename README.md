@@ -108,7 +108,7 @@ CAPSTONE/
 
 | | Ubuntu / Linux | macOS | Windows |
 |---|---|---|---|
-| **Status** | Tested (Ubuntu 22.04) | Untested | Tested (synthesis pipeline) |
+| **Status** | Tested | Untested | Tested |
 | **Python** | 3.10+ | 3.10+ | 3.10+ |
 | **Yosys** | OSS CAD Suite | OSS CAD Suite | OSS CAD Suite |
 | **Perl** | Usually preinstalled | Preinstalled | [Strawberry Perl](https://strawberryperl.com/) |
